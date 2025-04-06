@@ -47,7 +47,7 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
     printf("    ACK 번호: %u\n", ntohl(tcp_hdr->ack_seq));
     printf("--------------------------------------\n");
 }
-
+```c
 int main(int argc, char **argv) {
     char *dev = NULL;                  // 캡처 장치 이름
     char errbuf[PCAP_ERRBUF_SIZE];       // 에러 버퍼
